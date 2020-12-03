@@ -75,6 +75,7 @@ function clicked() {
 
     var results = document.getElementById('results')
     results.style.display = 'block'
+    document.getElementById('body').style.height = '140vh'
     window.location.replace('index.html#results')
 
 }
@@ -90,9 +91,9 @@ submit.addEventListener('mouseout', () => {
 
 var reset = document.getElementById('reset');
 reset.addEventListener('click', () => {
+    document.getElementById('body').style.height = '100vh'
     document.getElementById('inputText').value = ''
-    // setTimeout(() => {
-        document.getElementById('results').style.display = 'none'
-        window.scrollTo(top)
-    // }, 500)
+    document.getElementById('results').style.display = 'none'
+    window.scrollTo(top)
+
 })

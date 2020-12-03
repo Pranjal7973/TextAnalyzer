@@ -5,12 +5,14 @@
     scroll-behavior: smooth;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+
 
 body{
+    height: 100vh;
     position: relative;
     background-image: url('bgimag3.png');
-    background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
     background-position: center;
 
 }
@@ -20,10 +22,11 @@ body::-webkit-scrollbar{
 }
 
 
-.container-parent{
+#container-parent{
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -38,6 +41,7 @@ body::-webkit-scrollbar{
     align-items: center;
     margin: 30px 0;
     box-shadow: 70px 70px 70px #2b282891;
+
     /* justify-content: center; */
     /* display: none; */
 }
@@ -66,7 +70,8 @@ body::-webkit-scrollbar{
     display: none;
     text-align: center;
     margin: 5rem 0;
-    color: white;
+    color: black;
+    font-family: 'Sansita Swashed', cursive;
 }
 
 ul{
@@ -74,7 +79,7 @@ ul{
 }
 li{
     margin: 0px 20px;
-    color: white;
+    color: black;
     font-size: 20px;
     list-style: none;
 }
@@ -86,6 +91,7 @@ h2{
 
 .tap{
     background-color: rgb(11, 235, 235);
+    box-shadow:  5px 10px 10px #b3b7b9;
     color: white;
     border: none;
     padding: 12px;
