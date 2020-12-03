@@ -97,3 +97,7 @@ reset.addEventListener('click', () => {
     window.scrollTo(top)
 
 })
+
+reset.addEventListener('mouseout', ()=>{
+    reset.style.transition = 'all 0.4s ease-out'
+})
