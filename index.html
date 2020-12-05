@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="body">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Analyzer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="body">
+<body>
     <div id="container-parent">
-    <div class="container" id="text">
-        <label for="inputText">Write Here:</label>
-        <div class="input">
-        <textarea type="text" cols="60" rows="10" name="inputText" id="inputText"></textarea>
-    </div>
-        <div id="buttons">
-        <input type="button" value="Submit" class="tap" id="submit">
-        <input type="reset" value="Reset" class="tap" id="reset"></div>
+        <div class="container" id="text">
+            <label for="inputText">Write Here:</label>
+            <div class="input">
+                <textarea type="text" cols="60" rows="10" name="inputText" id="inputText"></textarea>
+            </div>
+            <div id="buttons">
+                <input type="button" value="Submit" class="tap" id="submit">
+                <input type="reset" value="Reset" class="tap" id="reset"></div>
 
-        <div id="results">
-            <h1>Results:</h1>
-            <h2 id="words"></h2>
-            <ul>
-                <li id="period"></li>
-                <li id="comma"></li>
-                <li id="question"></li>
-                <li id="exclamation"></li>
-                <li id="colon"></li>
-                <li id="space"></li>
-            </ul>
+            <div id="results">
+                <h1>Results:</h1>
+                <h2 id="words"></h2>
+                <ul>
+                    <li id="period"></li>
+                    <li id="comma"></li>
+                    <li id="question"></li>
+                    <li id="exclamation"></li>
+                    <li id="colon"></li>
+                    <li id="space"></li>
+                </ul>
+            </div>
         </div>
-    </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
         <script src="index.js"></script>
     </div>
 </body>
